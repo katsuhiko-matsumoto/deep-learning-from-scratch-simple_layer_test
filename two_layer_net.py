@@ -20,17 +20,17 @@ class TwoLayerNet:
         b1, b2 = self.params['b1'], self.params['b2']
 
         self.params['cnt'] = self.params['cnt'] + 1
-        print('--------')
-        print('x:',x.shape)
-        print('W1:',W1.shape)
+        #print('--------')
+        #print('x:',x.shape)
+        #print('W1:',W1.shape)
         a1 = np.dot(x, W1) + b1
-        print('W1-out:',a1.shape)
+        #print('W1-out:',a1.shape)
         z1 = sigmoid(a1)
-        print('W1-out(sigmoid):',z1.shape)
-        print('W2:',W2.shape)
+        #print('W1-out(sigmoid):',z1.shape)
+        #print('W2:',W2.shape)
         a2 = np.dot(z1, W2) + b2
-        print('W2-out:',a2.shape)
-        print('cnt:',self.params['cnt'])
+        #print('W2-out:',a2.shape)
+        #print('cnt:',self.params['cnt'])
         y = softmax(a2)
 
         return y
@@ -52,19 +52,19 @@ class TwoLayerNet:
     # x:入力データ, t:教師データ
     #順伝播
     def numerical_gradient(self, x, t):
-        print('#call numerical_gradient')
+        #print('#call numerical_gradient')
         loss_W = lambda W: self.loss(x, t)
 
-        print('#call recursive numerical_gradient')
+        #print('#call recursive numerical_gradient')
         grads = {}
         grads['W1'] = numerical_gradient(loss_W, self.params['W1'])
-        print('#call recursive W1 end:')
+        #print('#call recursive W1 end:')
         grads['b1'] = numerical_gradient(loss_W, self.params['b1'])
-        print('#call recursive b1 end:')
+        #print('#call recursive b1 end:')
         grads['W2'] = numerical_gradient(loss_W, self.params['W2'])
-        print('#call recursive W2 end:')
+        #print('#call recursive W2 end:')
         grads['b2'] = numerical_gradient(loss_W, self.params['b2'])
-        print('#call recursive b2 end:')
+        #print('#call recursive b2 end:')
         return grads
 
     #逆伝播
