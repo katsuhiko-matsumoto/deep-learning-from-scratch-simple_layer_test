@@ -1,6 +1,5 @@
 # coding: utf-8
 import sys
-sys.path.append('..')  # 親ディレクトリのファイルをインポートするための設定
 from common.layers import *
 from negative_sampling_layer import NegativeSamplingLoss
 
