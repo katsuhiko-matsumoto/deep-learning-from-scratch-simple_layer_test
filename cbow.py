@@ -1,4 +1,4 @@
-# coding: utf-8
+# for cbow language model
 import sys
 sys.path.append('..')
 from common.np import *  # import numpy as np

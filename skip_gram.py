@@ -1,4 +1,4 @@
-# coding: utf-8
+# for cbow
 import sys
 from common.layers import *
 from negative_sampling_layer import NegativeSamplingLoss

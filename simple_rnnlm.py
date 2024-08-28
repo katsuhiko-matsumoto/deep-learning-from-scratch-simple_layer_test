@@ -1,4 +1,4 @@
-# coding: utf-8
+# for rnn
 import sys
 import numpy as np
 from common.time_layers import *

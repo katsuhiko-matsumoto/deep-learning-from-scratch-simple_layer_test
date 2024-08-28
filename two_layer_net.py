@@ -1,3 +1,4 @@
+#for simple affine
 import sys, os
 from common.functions import *
 from common.gradient import numerical_gradient

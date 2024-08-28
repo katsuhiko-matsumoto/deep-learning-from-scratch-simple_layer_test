@@ -1,4 +1,3 @@
-# coding: utf-8
 import sys
 from common import config
 # GPUで実行する場合は、下記のコメントアウトを消去（要cupy）

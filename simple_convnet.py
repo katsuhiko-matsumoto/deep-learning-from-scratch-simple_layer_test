@@ -1,4 +1,4 @@
-# coding: utf-8
+# for conv
 import sys, os
 import pickle
 import numpy as np

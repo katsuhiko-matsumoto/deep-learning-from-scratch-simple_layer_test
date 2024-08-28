@@ -1,4 +1,4 @@
-# coding: utf-8
+# for cbow
 import sys
 from common.np import *  # import numpy as np
 from common.layers import Embedding, SigmoidWithLoss
