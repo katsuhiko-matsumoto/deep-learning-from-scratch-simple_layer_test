@@ -60,6 +60,7 @@ class SimpleConvNet:
 
     def predict(self, x):
         for layer in self.layers.values():
+            print("layer:",x.shape)
             #print(layer)
             #print(x.shape)
             x = layer.forward(x)
